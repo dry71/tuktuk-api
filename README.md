@@ -3,6 +3,8 @@
 Parameters:
   * ```firstname``` ? **(str)**
   * ```lastname``` ? **(str)**
+  * ```telephone``` ? **(str)** 
+  * ```gender``` ? **(str)**
   * ```user_id``` **(str)**
   * ```token``` **(str)**
 
@@ -12,7 +14,9 @@ Result:
     "status": (int),
     "profileInfo": {
       "firstname": (str),
-      "lastname": (str)
+      "lastname": (str),
+      "telephone": (str),
+      "gender": (str)
     }
   }
 ```
