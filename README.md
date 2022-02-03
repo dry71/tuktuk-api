@@ -5,7 +5,6 @@ Parameters:
   * ```lastname``` ? **(str)**
   * ```telephone``` ? **(str)** 
   * ```gender``` ? **(str)**
-  * ```user_id``` **(str)**
   * ```token``` **(str)**
 
 Result: 
@@ -31,7 +30,6 @@ Errors:
 Parameters:
   * ```old_password``` **(str)**
   * ```new_password``` **(str)**
-  * ```user_id``` **(str)**
   * ```token``` **(str)**
 
 Result: 
