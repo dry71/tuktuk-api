@@ -1,48 +1,20 @@
-#### POST ```api/editProfileInfo```
+#### POST ```api/getInfoUser```
 
 Parameters:
-  * ```firstname``` ? **(str)**
-  * ```lastname``` ? **(str)**
-  * ```telephone``` ? **(str)** 
-  * ```gender``` ? **(str)**
+  * ```user_id``` ? **(str)**
   * ```token``` **(str)**
 
 Result: 
 ```python
   {
-    "status": (int),
-    "profileInfo": {
-      "firstname": (str),
-      "lastname": (str),
-      "telephone": (str),
-      "gender": (str)
-    }
+    "user_id": (str),
+    "code": (int),
+    "firstname": (str),
+    "lastname": (str),
+    "photo": (str),
   }
 ```
 
 Errors:
-  * ```status: 1``` **Неизвестный пользователь**
-  * ```status: 4``` **Некоректный запрос**
-  * ```status: 7``` **Ошибка авторизации**
------
-#### POST ```api/changePassword```
-
-Parameters:
-  * ```old_password``` **(str)**
-  * ```new_password``` **(str)**
-  * ```token``` **(str)**
-
-Result: 
-```python
-  {
-    "status": (int),
-    "changesResult": {
-      "token": (str)
-    }
-  }
-```
-
-Errors:
-  * ```status: 1``` **Неизвестный пользователь**
-  * ```status: 4``` **Некоректный запрос**
-  * ```status: 7``` **Ошибка авторизации**
+  * ```status: 1``` **Введите верные данные или попробуйте позднее**
+  * ```status: 4``` **Некорректный запрос**
